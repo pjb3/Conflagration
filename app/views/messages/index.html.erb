@@ -27,6 +27,7 @@
     
     $(function(){
       $('form').submit(function(){
+        this.preventDefault():
         postMessage();
         $('#post-message').val('');
         return false;
