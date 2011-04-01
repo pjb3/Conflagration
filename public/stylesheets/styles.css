@@ -1,0 +1,8 @@
+body { 
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size:12px;
+}
+#messages p {
+  margin:3px 0;
+  padding:0;
+}
