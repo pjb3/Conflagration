@@ -1,0 +1,44 @@
+<% content_for :scripts do %>
+  <script type="text/javascript">
+    function h(s) {
+      return $('<div/>').text(s).html();
+    }
+  
+    function postMessage() {
+      var params = $('form').serialize();
+      $.post('/<%= params[:room] %>.js', params);
+      appendMessage($('#message div'), params.user, params.body);
+    }
+
+    function appendMessage(element, user, body) {
+      element.append($('<p><strong>'+h(user)+'</strong> '+h(body)+'</p>'));
+    }
+
+    function getMessages() {
+      $.getJSON('/<%= params[:room] %>.js', function(data){
+        var messages = $('<div/>');
+        $.each(data, function(i,message){
+          appendMessage(messages, message.user, message.body);
+        });
+        $('#messages').html(messages)
+        setTimeout(getMessages, 5000);
+      });
+    }
+    
+    $(function(){
+      $('form').submit(function(){
+        postMessage();
+        $('#post-message').val('');
+        return false;
+      });
+      getMessages();
+    });
+  </script>
+<% end %>
+
+<div id="messages"></div>
+
+<%= form_tag "/#{params[:room]}" do %>
+  <input id="post-message" type="text" name="message" size="80" />
+  <button type="submit">Post</button>
+<% end %>

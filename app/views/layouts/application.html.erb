@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conflagration</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag "jquery" %>
+  <%= csrf_meta_tag %>
+  <%= yield :scripts %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
