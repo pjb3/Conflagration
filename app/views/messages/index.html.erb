@@ -6,8 +6,8 @@
   
     function postMessage() {
       var params = $('form').serialize();
-      $.post('/<%= params[:room] %>.js', params);
-      appendMessage($('#message div'), params.user, params.body);
+      $.post($('form').attr('action'), params);
+//      appendMessage($('#message div'), params.user, params.body);
     }
 
     function appendMessage(element, user, body) {
