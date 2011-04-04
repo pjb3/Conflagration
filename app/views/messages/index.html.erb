@@ -3,7 +3,7 @@
     function h(s) {
       return $('<div/>').text(s).html();
     }
-  
+
     function postMessage() {
       var params = $('form').serialize();
       $.post($('form').attr('action'), params);
@@ -24,7 +24,7 @@
         setTimeout(getMessages, 5000);
       });
     }
-    
+
     $(function(){
       $('form').submit(function(){
         this.preventDefault():
@@ -39,7 +39,35 @@
 
 <div id="messages"></div>
 
+<section class="mod messages">
+<div class="body">
+<ul>
+  <li class="message">
+    This is something that I wrote
+  </li>
+  <li class="message alt">
+    This is something that I wrote
+  </li>
+  <li class="message">
+    This is something that I wrote
+  </li>
+  <li class="message alt">
+    This is something that I wrote
+  </li>
+  <li class="message">
+    This is something that I wrote
+  </li>
+</ul>
+</div>
+</section>
+
 <%= form_tag "/#{params[:room]}" do %>
-  <input id="post-message" type="text" name="message" size="80" />
-  <button type="submit">Post</button>
+<fieldset>
+  <ul>
+    <li>
+      <input id="post-message" class="ls-text" type="text" name="message" size="80" />
+      <button type="submit" class="button medium secondary">Post</button>
+    </li>
+  </ul>
+</fieldset>
 <% end %>

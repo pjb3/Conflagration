@@ -1,0 +1,144 @@
+/*
+###############################################################################
+#
+#   Typography.css
+#   Sets up base typography
+#   LivingSocial.com Refresh Summer 2011
+#
+###############################################################################
+*/
+
+html { font-size:100.01%; -webkit-font-smoothing: antialiased; }
+body { font:13px/1.231 sans-serif; *font-size:small; }
+
+select, input, textarea, button { font:99% sans-serif; }
+
+/* normalize monospace sizing
+ * en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
+ */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+/* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */
+body, select, input, textarea {
+  background: #fff;
+  color: #444;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+
+
+/* HEADINGS
+========================= */
+
+h1, h2, h3, h4, h5, h6 {
+  color: #262626;
+  font-weight: normal;
+  word-spacing:-1px;
+}
+
+h1 { font-size: 2.5em; font-weight: bold; line-height: 1.3em; margin-bottom: 0.5em; }
+h2 { font-size: 2em; margin-bottom: 0.75em; }
+h3 { font-size: 1.5em; line-height: 1; margin-bottom: .5em; }
+h4 { font-size: 1.2em; line-height: 1.25; margin-bottom: 1.25em; }
+h5 { font-size: 1em; font-weight: bold; margin-bottom: 1.5em; }
+h6 { font-size: 1em; font-weight: bold; }
+
+
+/* TEXT ELEMENTS
+========================= */
+
+p              { margin: 0 0 1.5em; }
+
+a:focus,
+a:hover        { color: #000; }
+a              { color: #1D81C1; text-decoration: none; outline-style: none; }
+
+blockquote     { margin: 1.5em; color: #666; font-style: italic; }
+strong         { font-weight: bold; }
+em,dfn         { font-style: italic; }
+dfn            { font-weight: bold; }
+sup, sub       { line-height: 0; }
+
+abbr,
+acronym        { border-bottom: 1px dotted #666; }
+address        { margin: 0 0 1.5em; font-style: italic; }
+del            { color:#666; }
+
+pre            { margin: 1.5em 0; white-space: pre; }
+pre,code,tt    { font: 1em Monaco, 'andale mono', 'lucida console', monospace; }
+
+
+/* LISTS
+========================= */
+
+li ul,
+li ol       { margin: 0; }
+ul, ol      { margin: 0 1.5em 1.5em 0; padding-left: 1.333em; }
+
+ul          { list-style:square outside none; }
+ol          { list-style-type: decimal; }
+
+dl          { margin: 0 0 1.5em 0; }
+dl dt       { font-weight: bold; }
+dd          { margin-left: 1.5em;}
+
+
+/* TABLES
+========================= */
+table                   { width: 100%; background: #fff; margin-bottom: 35px; }
+table caption           { margin: 0; padding: 8px 10px; text-align: left; border: 1px solid #000; border-bottom: none; background: #fff; }
+table th, table td      { margin: 0; padding: 8px 10px; text-align: center; border-bottom: 1px solid #e1e1e1; }
+table th                { font-size: 14px; font-weight: bold; }
+table .name             { text-align: left; }
+table tr                { background-color: #fff; }
+table tr.last td        { border-bottom: none; }
+
+
+/* Misc classes
+-------------------------------------------------------------- */
+.reset              { margin: 0; padding:0; }
+.small              { font-size: 10px; }
+.large              { font-size: 16px; }
+.hide               { display: none; }
+.quiet              { color: #bbb; }
+.loud               { color: #000; font-weight: bold; }
+.required           { color: #ff0000; }
+.highlight          { background-color:#ff0; padding: 2px 6px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+
+/* Rule lines */
+
+hr {
+  border: 0;
+  border-top: 1px solid #d7d3ce;
+  margin-top: 10px;
+}
+
+hr.harvardrule {
+  background-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #aaa;
+  border-top: 4px solid #aaa;
+  color: #fff;
+  height: 2px;
+  margin: 2px 0 7px 0;
+}
+
+hr.solidthickrule {
+  background-color: #d7d3ce;
+  border-top: none;
+  height: 8px;
+  margin-bottom: 3px;
+}
+
+hr.doublerule {
+  background-color: #f0efe9;
+  border: 0;
+  border-bottom: 1px solid #aaa;
+  border-top: 1px solid #aaa;
+  color: #f0efe9;
+  height: 2px;
+  margin: 7px 0;
+}
+
+
+

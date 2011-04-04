@@ -1,9 +1,11 @@
 <form action="/logins" method="post">
-  <label>
-    Username:
-    <input type="text" name="user" value="<%= current_user %>">
-  </label>
-  <p>
-    <button type="submit">Login</button>
-  </p>
+  <fieldset>
+    <ul>
+      <li>
+        <label>Username:</label>
+        <input type="text" class="ls-text" name="user" value="<%= current_user %>">
+        <button type="submit" class="button medium secondary">Login</button>
+      </li>
+    </ul>
+  </fieldset>
 </form>

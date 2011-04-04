@@ -9,7 +9,53 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="container">
+  <header>
+    <h1>Paul Barry's sweet chat room</h1>
+  </header>
+
+  <div class="span-16 colborder">
+    <%= yield %>
+  </div>
+
+  <aside class="span-7 last">
+    <section class="mod">
+      <header>
+        <h1>Currently In Room</h1>
+      </header>
+      <div class="body">
+        <ul>
+          <li>User 1</li>
+          <li>User 2</li>
+          <li>Really long name User</li>
+          <li>User 4</li>
+          <li>User 5</li>
+          <li>User 6</li>
+        </ul>
+
+        <footer>
+          <p></p>
+        </footer>
+      </div>
+    </section>
+
+    <section class="mod">
+      <header>
+        <h1>Linked and Attached</h1>
+      </header>
+      <div class="body">
+        <ul>
+          <li>this is a photo that was shared</li>
+          <li>this is a link that was shared</li>
+        </ul>
+
+        <footer>
+          <p></p>
+        </footer>
+      </div>
+    </section>
+  </aside>
+</div>
 
 </body>
 </html>

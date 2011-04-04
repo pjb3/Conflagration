@@ -1,0 +1,47 @@
+/*
+###############################################################################
+# A few basics
+###############################################################################
+*/
+
+/* bicubic resizing for non-native sized IMG:
+   code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+/*
+  IMAGE REPLACEMENT
+  for image replacement, put this class on anything and then set the
+  background image, etc. in the item's main call out. See header logo
+  below for example
+*/
+.ir {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+/* Hide for both screenreaders and browsers
+   css-discuss.incutio.com/wiki/Screenreader_Visibility */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal
+  www.webaim.org/techniques/css/invisiblecontent/  &  j.mp/visuallyhidden */
+.visuallyhidden {
+    border: 0 !important;
+    clip: rect(0 0 0 0);
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+.mod.messages               { min-height: 400px; }
+.mod.messages ul li.message { border-bottom: 1px solid #e1e1e1; padding: 10px;}

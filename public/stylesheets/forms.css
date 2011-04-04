@@ -1,0 +1,129 @@
+/* BASIC FORM STRUCTURE
+======================== */
+
+form ul                             { margin: 0; padding: 0; list-style: none; }
+form ul li                          { margin: 0; padding: 10px 0; }
+form ul li.last                     { border: none; }
+form label                          { margin: 6px 20px 2px 0; display: block; font-size: 0.87em; line-height: 1.5em; font-weight: bold; }
+form span.note                      { font-size: 11px; font-weight: normal; color: #777; }
+form label.remember                 { display: inline; font-size: 1.2em; font-weight: normal; }
+form fieldset                       { margin-bottom: 20px; padding: 0 0 20px 0; border:none; border-bottom: 1px solid #ddd; }
+form fieldset legend                { padding: 0;  font-size: 24px; font-weight: bold; background-color: #fff; }
+section.mod div.body form ul li     { border: none; }
+
+/* INPUT TEXT
+======================== */
+
+form fieldset input.ls-text {
+  width: 300px;
+  padding: 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  color: #333;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: inset 0 2px 2px #ddd;
+  -moz-box-shadow: inset 0 2px 2px #ddd;
+  box-shadow: inset 0 2px 2px #ddd;
+  background: #f8f8f8; }
+
+form .full-width input.ls-text, form .full-width textarea { width:400px; }
+
+/* INPUT TYPE FILE
+======================== */
+form fieldset input.file                { padding: 5px 8px; border: 1px solid #e1e1e1; background-color: #f1f1f1; }
+form label.file-label                   { display: block; overflow: hidden; cursor: pointer; }
+form label.file-label input.file        { position: relative; height: 100%; width: auto;}
+
+/* TEXTAREA
+======================== */
+
+form fieldset textarea {
+  width: 400px;
+  height: 100px;
+  padding: 5px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    color: #333;
+  -webkit-box-shadow: inset 0 2px 2px #ddd;
+  -moz-box-shadow: inset 0 2px 2px #ddd;
+  box-shadow: inset 0 2px 2px #ddd;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd; }
+
+/* INPUT CHECKBOX OR RADIO
+======================== */
+
+h2.checkbox-heading,
+h2.radio-heading                    { margin: 6px 20px 2px 0; display: block; font-size: 1em; line-height: 1.5em; font-weight: bold; }
+label.checkbox, label.radio         { font-size: 0.87em; font-weight: normal; }
+
+
+/* SELECT BOX
+======================== */
+
+form select                         { padding: 2px 0 2px 4px; border: 1px solid #e1e1e1; background-color: #fff; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; color: #333; -moz-border-radius-topleft: 3px; -webkit-border-top-left-radius: 3px; -moz-border-radius-bottomleft: 3px; -webkit-border-bottom-left-radius: 3px; }
+form select.long-select             { width: 260px; }
+form .inline.date select            { min-width: inherit; }
+
+
+/* INLINE FORM FIELDS
+======================== */
+
+form .inline {display:inline-block; padding-right:5px;}
+form .inline label                      { display: inline-block; margin: 6px 6px 2px 0; } /* width: 130px; */
+form .inline.stacked label              { display:block; width:auto;}
+/* form .inline.center  label           { width: 150px;text-align: right; } */
+form .inline input.ls-text              { vertical-align: top;}
+form .two-col                           { width:190px; }
+form .three-col                         { width:120px; }
+
+/* FORM FOCUS STYLES
+======================== */
+
+form fieldset input.text:focus,
+form fieldset textarea:focus    { border: 1px solid #9ec43d; outline-width: 0;  }
+
+/* SEARCH FORM
+======================== */
+
+.mod ul li.searchform           { padding: 5px 5px 3px 5px; }
+.mod.search form fieldset        { border: none; }
+
+.searchform {
+  display: inline-block;
+  zoom: 1; /* ie7 hack for display:inline-block */
+  *display: inline;
+  border: solid 1px #d2d2d2;
+  padding: 5px;
+
+  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+  -webkit-box-shadow: 0 1px 0px rgba(0,0,0,.1); -moz-box-shadow: 0 1px 0px rgba(0,0,0,.1); box-shadow: 0 1px 0px rgba(0,0,0,.1);
+
+  background: #f1f1f1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));
+  background: -moz-linear-gradient(top,  #fff,  #ededed);
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed'); /* ie7 */
+  -ms-filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed'); /* ie8 */
+}
+
+.searchform .searchfield           { background: #fff; padding: 8px; width: 280px; border: solid 1px #bcbbbb; outline: none;
+  -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2); -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2); box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+}
+
+/* FORM MESSAGING
+======================== */
+
+form p.message                          { margin: 5px 0 0 160px; font-size: .8em; line-height: 1.5em; }
+form p.message strong                   { font-weight: bold; color: #666; }
+
+form div.message                        { margin-bottom: 10px; padding: 5px 10px;}
+form div.message span                   { display: inline-block; background: url("../images/forms/messaging.png") 0 0 no-repeat; width: 12px; height: 12px; padding-right: 8px;}
+form div.message ul                     { list-style: disc; margin-left: 40px; margin-top: 10px; font-size: 0.87em;}
+form div.message li                     { margin-bottom: 5px; padding: 0;}
+
+form div.success                        { background: #f1f5d2; border: 1px solid #9ec43d;}
+form div.error                          { background: #fde1e1; border:1px solid #d99a9a; }
+form div.success span                   { background-position: 0 1px;}
+form div.error span                     { background-position: 0 -18px;}
+
